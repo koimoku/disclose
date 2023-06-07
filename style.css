@@ -1,0 +1,131 @@
+body {
+    background-image: url(assets/noisebg.png);
+    background-repeat: repeat;
+    overflow-x: hidden;
+    scroll-behavior: unset;
+}
+
+.main_strip {
+    width: 100vw;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.main_container {
+    width: 600px;
+}
+
+.block {
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color: #000000;
+    margin: 0;
+    border-width: 3px;
+    border-color: #487286;
+    border-style: solid;
+    background-color: rgb(246, 246, 246);
+}
+
+.confession {
+    border-radius: 20px 20px 9px 9px;
+    padding: 24px 10px 28px 30px;
+}
+
+.button {
+    margin-top: 10px;
+    border-radius: 9px 9px 20px 20px;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    padding: 3px 9px 7px 9px;
+}
+
+.right_button {
+    float:right;
+}
+
+.left_button {
+    margin-right: 5px;
+}
+
+.next {
+    padding-right: 5px;
+    display: none;
+}
+
+.back {
+    padding-left: 5px;
+    display: none;
+    border-bottom-right-radius: 9px;
+}
+
+.confess {
+    display: none;
+    border-bottom-left-radius: 9px;
+}
+
+.contact {
+    display: none;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 20px;
+}
+
+.end {
+    display: none;
+}
+
+.blob_holder {
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.blob1 {
+
+}
+
+.blob2 {
+    margin-left: 100vw;
+    margin-top: 100vh;
+}
+
+.blob {
+    height: 33vw;
+    aspect-ratio: 1;
+    position: fixed;
+
+    /*left: 50%;*/
+    /*top: 50%;*/
+    translate: -49% -49%;
+    border-radius: 50%;
+
+    /*background: linear-gradient(*/
+    /*        to right,*/
+    /*        rgb(37, 150, 190, 0.1),*/
+    /*        rgb(37, 150, 190, 0.1)*/
+    /*);*/
+
+    background: rgb(37, 150, 190, 0.1);
+
+    /*animation: rotate 20s infinite;*/
+
+    filter: blur(150px);
+
+    /*pointer-events: none;*/
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
